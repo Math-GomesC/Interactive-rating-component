@@ -1,40 +1,68 @@
 /* mobile first dimensão do mobile 375px*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --cor-principal: hsl(25, 97%, 53%); /*Orange 500*/
     --cor-titulo-principal:hsl(0, 100%, 100%); /*White*/
     --card-primeira-paleta:hsl(217, 12%, 63%); /*Grey 500*/
     --card-segunda-paleta:hsl(213, 19%, 18%); /*Grey 900*/
     --card-terceira-paleta: hsl(216, 12%, 8%); /*Grey 950*/
-
+    --fonte-principal:"Overpass", sans-serif;/*Weights: 400, 700*/
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*dimensão do desktop 1440px*/
-@media screen and (min-width: 1440px){
+*{
+    box-sizing: border-box;
+    margin:0;
+}
 
 body{
- background-color: red;
+    background-color: var(--card-terceira-paleta);
+    justify-items: center;
+    
 }
 
+article{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border:solid red 1px ;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--card-segunda-paleta);
+    padding: 20px;
+    gap: 10px;
 }
+
+.icone-principal{
+    background-color: var(--card-primeira-paleta);
+    height:25px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+h1{
+    font-family: var(--fonte-principal);
+    color:var(--cor-titulo-principal);
+    font-size: 4vh;
+}
+
+p{
+    color:var(--card-primeira-paleta)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
