@@ -1,0 +1,34 @@
+/* mobile first
+dimensão do mobile 375px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*dimensão do desktop 1440px*/
+@media screen and (min-width: 1440px){
+
+body{
+ background-color: red;
+}
+
+}
+
