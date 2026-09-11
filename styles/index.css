@@ -1,6 +1,12 @@
-/* mobile first
-dimensão do mobile 375px
+/* mobile first dimensão do mobile 375px*/
+:root{
+    --cor-principal: hsl(25, 97%, 53%); /*Orange 500*/
+    --cor-titulo-principal:hsl(0, 100%, 100%); /*White*/
+    --card-primeira-paleta:hsl(217, 12%, 63%); /*Grey 500*/
+    --card-segunda-paleta:hsl(213, 19%, 18%); /*Grey 900*/
+    --card-terceira-paleta: hsl(216, 12%, 8%); /*Grey 950*/
 
+}
 
 
 
