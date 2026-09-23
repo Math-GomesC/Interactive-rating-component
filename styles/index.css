@@ -3,7 +3,8 @@
 :root{
     --cor-principal: hsl(25, 97%, 53%); /*Orange 500*/
     --cor-titulo-principal:hsl(0, 100%, 100%); /*White*/
-    --card-primeira-paleta:hsl(217, 12%, 63%); /*Grey 500*/
+    --card-primeira-paleta:hsla(217, 12%, 63%, 0.999); /*Grey 500*/
+    --card-primeira-paleta-botoes:hsla(217, 12%, 63%, 0.215);
     --card-segunda-paleta:hsl(213, 19%, 18%); /*Grey 900*/
     --card-terceira-paleta: hsl(216, 12%, 8%); /*Grey 950*/
     --fonte-principal:"Overpass", sans-serif;/*Weights: 400, 700*/
@@ -34,7 +35,7 @@ article{
 }
 
 .icone-principal{
-    background-color: var(--card-primeira-paleta);
+    background-color:var(--card-primeira-paleta-botoes);
     height:auto;
     border-radius: 50%;
     padding: 10px;
@@ -56,15 +57,38 @@ p{
     font-family: var(--fonte-principal);
 }
 
+form{
+    display: flex;
+    justify-content: space-around;
+}
+
+input{
+    display: none;
+}
+
+label{
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:var(--card-primeira-paleta-botoes);
+    padding: 15px;
+    height: auto;
+    width: 50px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    color:var(--card-primeira-paleta);
+}
 .Submit{
+    margin:10px 0 10px;
     border-radius:20px;
     border: 1px var(--card-segunda-paleta);
     color:var(--card-terceira-paleta);
     padding: 10px;
     font-family: var(--fonte-principal);
     background-color: var(--cor-principal);
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
+    letter-spacing: 2px;
 }
 
 
