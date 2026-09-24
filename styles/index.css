@@ -81,6 +81,12 @@ label{
     color:var(--card-primeira-paleta);
 }
 
+label:hover{
+    background-color:var(--cor-titulo-principal);
+    color:var(--card-terceira-paleta);
+    cursor:pointer;
+}
+
 .Submit{
     margin:10px 0 10px;
     border-radius:20px;
@@ -94,6 +100,11 @@ label{
     letter-spacing: 2px;
 }
 
+.Submit:hover{
+    background-color:var(--cor-titulo-principal);
+    color:var(--card-terceira-paleta);
+    cursor:pointer;
+}
 
 
 

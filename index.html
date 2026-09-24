@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles/index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script defer src="scripts/index.js"></script>
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
 
     <p> Please let us now how we did with your support request.All feedback is appreciated to help us improve our offering!</p>
     
-    <form>
+    <form id="FeedbackFormulario">
       <input type="radio" id="feedback1" name="feedback" value="1">
       <label for="feedback1">1</label>
       <input type="radio" id="feedback2" name="feedback" value="2">
@@ -29,7 +29,7 @@
       <label for="feedback5">5</label>
     </form>
 
-    <button class="Submit">SUBMIT</button>
+    <button id="Submit" class="Submit">SUBMIT</button>
 
   </article>
 </body>
