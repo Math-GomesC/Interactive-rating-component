@@ -87,6 +87,12 @@ label:hover{
     cursor:pointer;
 }
 
+.clicado{
+    background-color:var(--cor-principal);
+    cursor: pointer;
+    color:var(--card-terceira-paleta);
+}
+
 .Submit{
     margin:10px 0 10px;
     border-radius:20px;

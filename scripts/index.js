@@ -1,15 +1,8 @@
-let BotaoSubmit = document.getElementById("Submit")
-let FeedbackValue = document.getElementById("FeedbackFormulario");
-console.log(FeedbackValue.value)
+let Feedback = document.querySelectorAll('input[name="feedback"]')
 
-BotaoSubmit = addEventListener("click" , EnviarFormularioBotao())
-
-
-function EnviarFormularioBotao ("Submit"){
-    Enviar.preventDefaut();
-
-    const Nota = document.querySelector('input[name="feedback"]:checked');
-
-    console.log(Nota.value)
-};
+Feedback.forEach((Input) =>{
+    Input.addEventListener("click" ,(event) => {
+        Input.nextElementSibling.classList.add("clicado")
+        console.log(event.target.value);})    
+})
 
