@@ -2,6 +2,8 @@ let Feedback = document.querySelectorAll('input[name="feedback"]')
 let NotaFeedback = 0
 let CardDeNotas = document.getElementById("CampoDeFeedback")
 let BotaoSubmit = document.getElementById("Submit")
+let ResultadoValor = document.querySelector(".FeedbackResultado")
+let CardResultado = document.getElementById("CampoDeResultado")
 
 /*Pega o valor do Feedback e armazena na variavel NotaFeedback*/
 Feedback.forEach((Input) =>{
@@ -19,12 +21,13 @@ Feedback.forEach((Input) =>{
             NotaFeedback = event.target.value /*pega o valor que foi clicado*/
             console.log(NotaFeedback)
         }
+        ResultadoValor.textContent = `You selected ${NotaFeedback} out of 5`
     })  
 })
-
 /*alterando o card*/
 
 BotaoSubmit.addEventListener("click" , (event) =>{
     CardDeNotas.style.display = "none"
+    CardResultado.style.display = "flex"
 })
 /*botao for clicado ele vai apagar o display do card notas*/
